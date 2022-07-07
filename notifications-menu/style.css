@@ -6,6 +6,7 @@
     --mallerFontsize: 14px;
     --mediumWeight: 400;
     --maxWeight: 600;
+    -mobile: 414px;
 }
 
 *,
@@ -19,10 +20,10 @@
 
 body {
     font-family: 'Inter', 'Obitron', sans-serif;
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
+ */
 }
-
 
 .header {
     position: relative;
@@ -33,8 +34,12 @@ body {
     text-align:center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     align-items: center;
     align-content: center;
@@ -43,7 +48,7 @@ body {
 }
 
 .row {
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     padding: 1.5rem;
     align-items: center;
   }
@@ -55,8 +60,8 @@ body {
     padding: 20px;
     padding-left: -20px; 
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -92,8 +97,7 @@ body {
     font-weight: var(--mediumWeight);
     font-size: var(--mainFontsize);
     max-width: 450px;
-    margin-right: -35px;
-    padding-right: 15px;
+    color: black;
     padding-bottom: 10px;
 }
 
@@ -130,9 +134,8 @@ hr {
     height: 40px;
     border-radius: 50%;  
     margin: 30px;
-    margin-right: 0px;
+    /* margin-right: 0px; */
     margin-bottom: 20px;
-    /* padding-top: 50px; */
     padding: 6px;
     background: var(--brandeisBlue)
 
@@ -168,5 +171,22 @@ hr {
 .view-more {
     margin: 10px 10px 0px 10px;
     font-weight: var(--maxWeight);
-    color: var(--royalBlue)
+    color: var(--royalBlue);
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+   
+    #mark:focus, #mark:hover {
+        text-decoration: 2px underline;
+        /* border-bottom: 2px solid var(--brandeisBlue); */
+    }
+
+    #view:focus, #view:hover {
+        text-decoration: 2px underline;
+        /* border-bottom: 2px solid var(--brandeisBlue); */
+    }
+
+
 }
