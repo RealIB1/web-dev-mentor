@@ -174,19 +174,15 @@ hr {
     color: var(--royalBlue);
     cursor: pointer;
 }
-
-
-@media only screen and (min-width: 414px) and (max-width: 768px) {
    
-    #mark:focus, #mark:hover {
+    #mark:active, #mark:hover {
         text-decoration: 2px underline;
         /* border-bottom: 2px solid var(--brandeisBlue); */
     }
 
-    #view:focus, #view:hover {
+    #view:active, #view:hover {
         text-decoration: 2px underline;
         /* border-bottom: 2px solid var(--brandeisBlue); */
     }
 
 
-}
